@@ -1,0 +1,1 @@
+# coordinate_mapping_for_image_augmentor
