@@ -224,7 +224,8 @@ def main(_images_folder_name, _json_name):
                 for i in data:
                     if i.startswith(f):
                         if data[i]['filename'] == f:
-                            img_annotation = data[i].copy()
+                            img_annotation_key = i
+                            img_annotation = {img_annotation_key: data[i].copy()}
                 all_annotation.update(img_annotation)
 
     print(all_annotation)
