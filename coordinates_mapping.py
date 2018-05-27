@@ -197,7 +197,7 @@ def main(_images_folder_name, _json_name):
                                 _y = regions[i]['shape_attributes']['all_points_y']
                                 id = regions[i]['region_attributes']['id']
 
-                                if len(op_split) == 2:
+                                if len(op_split) == 3:
                                     op1 = op_split[1]
                                     op2 = op_split[2]
                                     op1_name, args_list1 = op_parse(op1)
