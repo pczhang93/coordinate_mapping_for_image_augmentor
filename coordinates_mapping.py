@@ -58,10 +58,10 @@ def coord_trans(_x, _y, dx, dy, w=1920, h=1080):
     return x, y
 
 
-def coord_zoom(_x, _y, r1, r2, r3, r4, w=1920, h=1080):
+def coord_zoom(_x, _y, r1, r2, r3, r4, w=1920.0, h=1080.0):
     w_r = r3 - r1
     h_r = r4 - r2
-    a = w / w_r
+    a = w / w_r  #The division in Python2 ignores the decimal part and causes computation errors.
     b = h / h_r
 
     _xy = list(zip(_x, _y))
