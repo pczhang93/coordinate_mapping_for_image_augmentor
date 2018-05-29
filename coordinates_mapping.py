@@ -152,7 +152,7 @@ def coordinate_transform(_x, _y, op_name, _args_list):
                           int(_args_list[3]))
     elif op_name == 'blur':
         x, y = coord_blur(_x, _y)
-    return _x, _y
+    return x, y
 
 
 def main(_images_folder_name, _json_name):
