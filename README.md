@@ -10,6 +10,7 @@ python coordinate_mapping.py [images_folder_name] [json_name]
 
 #### After the script is run, the newly generated JSON file will be named after [images_folder_name].
 
-####The current version is to discard the point directly beyond the image boundary after transformation.
+#### The current version is to discard the point directly beyond the image boundary after transformation. So consider carefully whether the script meets your needs.
+
 
 
