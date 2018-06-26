@@ -1,7 +1,7 @@
 # coordinate_mapping_for_image_augmentor
 #### The script is aim to generate corresponding annotation files(Maybe it is to augment data sets for training instance segmentation models) in VIA（[VGG Image Annotator](http://www.robots.ox.ac.uk/~vgg/software/via/via.html)） format for new generated images after data augmentation by [image_augmentor](https://github.com/codebox/image_augmentor).
 
-#### Before run the script, you need to put the augmented images folder and the VIA format JSON file that annotate the original images in the current directory. And add the two parameters of [images_folder_name] and [json_name], when running the script.
+#### Before run the script, you need to put the augmented images folder and the VIA format JSON file that annotate the original images in the current directory. You need to know the width and height of your images and modify the default parameters of the function that begins with 'coord_'. And add the two parameters of [images_folder_name] and [json_name], when running the script.
 ```
 python coordinate_mapping.py [images_folder_name] [json_name]
 ```
